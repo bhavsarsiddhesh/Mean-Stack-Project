@@ -1,0 +1,53 @@
+<div class="container-fluid back"
+    style="background: url(assets/1.jpg);width:100%;background-size: cover;background-repeat: no-repeat;background-position: center;object-fit: cover;">
+    <div>
+
+        <div class=" row vh-100  d-flex justify-content-center align-items-center text-light" id="main-bg">
+            <div class="col-12 col-md-8 d-flex justify-content-center align-items-center" id="id1">
+                <div class="alert alert-danger" role="alert" *ngIf="InvalidCredential">
+                    Invalid Username & Password
+                </div>
+                <div class="col-12 col-md-6 justify-content-between h-100 w-100" id="sub-bg" [formGroup]="fbFormGroup">
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center align-items-center " style="height:4.375rem;font-weight: bold;color: white;
+                            text-shadow: 2px 2px 4px #000000;font-size:2em">
+                            Change Password
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center align-items-center " style="height:70px">
+                            <input type="text" placeholder="Enter Your Email Address" formControlName="Email"
+                                class="form-control rounded-pill">
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center align-items-center " style="height:4.375rem;">
+                            <input type="password" placeholder="New Password" formControlName="Password"
+                                class="form-control rounded-pill ">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center align-items-center 
+                        " style="height:4.375rem;text-align: center;">
+                            <div class="row">
+                                <button class="btn btn-primary btn-md" id="btn1" [disabled]="!fbFormGroup.valid"
+                                    (click)="passwordReset()">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row  text-light ">
+                        <div class="col-12 d-flex justify-content-center align-items-center"
+                            style="height:4.375rem;">
+                            <i style="color:#4867AA" class="fa fa-facebook-official"></i>
+                            <i class="fa fa-google-plus-square"></i>
+                            <i class="fa fa-twitter-square"></i>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

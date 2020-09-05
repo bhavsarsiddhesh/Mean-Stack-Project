@@ -1,0 +1,16 @@
+#box{
+    height:40vh;
+    width:95%;
+    border:2px solid gold;
+    background-color: rgba(100,200,117,1);
+    border-radius:20px;
+    border:none;
+    }
+ 
+ #inp{
+    width:35vw;
+ };
+ 
+ #emp{
+    border:2px solid gray;
+ };

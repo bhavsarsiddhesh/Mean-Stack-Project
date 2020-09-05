@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import"~bootstrap/dist/css/bootstrap.css";
+
+#box{
+   height:40vh;
+   width:45vw;
+   border:2px solid gold;
+   background-color: rgba(100,200,117,1);
+   border-radius:20px;
+   border:none;
+   }

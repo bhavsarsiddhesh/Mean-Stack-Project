@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row bg-dark text-light align-items-center sticky-top" style="height:10vh">
+        <div class="col d-flex justify-content-end align-items-center">
+            <div>
+                <button class="mr-1 btn btn-primary" (click)="gotoPage('Register')">Register</button>
+                <button class="btn btn-primary" (click)="gotoPage('Contact')">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row d-flex" style="height:90vh">
+        <div class="col bg-primary text-light d-flex justify-content-center align-items-center flex-column">
+            <div style="font-size: 28px;">EMPLOYEE MANAGEMENT SYSTEM</div>
+            <div id="emp" style="font-size: 20px;font-family: Matura MT Script Capitals;">"Employee management systems
+                also offer
+                solutions to increase employee engagement and ultimately impact
+                retention. Tools such as Performance Management provides a modern way to track and evaluate employee
+                development. You’re able to work with employees to establish goals, make them feel valuable and develop
+                a path for their success. Because 70% of employees around the country are unengaged, having a tool in
+                place to keep a stimulating organization is a necessity, not a ‘nice to have’."
+            </div>
+        </div>
+        <div class="col bg-light d-flex justify-content-center align-items-center">
+            <div id="box" class="d-flex justify-content-center align-items-center flex-column"
+                [formGroup]="fbFormGroup">
+                <div class="alert alert-danger" role="alert" *ngIf="InvalidCredential">
+                    Invalid Username & Password
+                </div>
+                <div class="h4 text-light">
+                    LOGIN AS ADMIN
+                </div>
+
+                <div>
+                    <input id="inp" class="form-control" type="text" placeholder="Enter Username"
+                        formControlName="Username" />
+                </div>
+
+                <div class="mt-1">
+                    <input id="inp" type="password" class="form-control" placeholder="Enter Password"
+                        formControlName="Password" />
+                </div>
+
+                <button class="btn btn-sm btn-primary mt-2 mb-2 text-light" (click)="loginprocess()">
+                    Login Here
+                </button>
+                <a routerLink="/ForgotPassword" class="mt-1 text-light"> Forgot Password? </a>
+            </div>
+        </div>
+    </div>
+</div>

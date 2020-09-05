@@ -1,0 +1,10 @@
+.error-main {
+    background-color: #fff;
+    box-shadow: 0px 10px 10px -10px #5686d3;
+    margin-top:200px;
+    font-size:32px;
+}
+
+.log{
+    font-size:40px;
+};

@@ -1,0 +1,10 @@
+#sub-bg{
+    border: 2px solid gray;
+    border-radius:2vw;
+    background-color:rgba(0,0,0,0.6) ;
+    border:none;    
+}
+
+#back{
+    background-image: url('E:/Employee Management Sysytem/Project/src/assets/1.jpg');
+}
